@@ -6,7 +6,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
 .logo-container {
@@ -16,6 +15,12 @@ body {
 }
 
 .forms-container {
-    color: white;
+    background-color: white;
+    height: 75%;
+    width: 50%;
     padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
