@@ -13,28 +13,25 @@
     </div>
     <div class="forms-container">
         <div>
-            <form action="">
+            <div>
                 <label for="first-name">First Name:</label>
-                <input type="text" id="first-name">
-            </form>
-            <form action="">
+                <input type="text" id="first-name" required>
                 <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name">
-            </form>
-            <form action="">
-                <label for="email">E-Mail Address:</label>
-                <input type="text" id="email">
-            </form>
-            <form action="">
+                <input type="text" id="last-name" required>
+            </div>
+            <div>
                 <label for="user-name">Username:</label>
-                <input type="text" id="user-name">
-            </form>
-            <form action="">
+                <input type="text" id="user-name" required>
+                <label for="email">E-Mail Address:</label>
+                <input type="text" id="email" required>
+            </div>
+            <div>
                 <label for="password">Password:</label>
-                <input type="password" id="first-password">
+                <input type="password" id="first-password" required>
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="second-password" onchange="confirmPassword()">
-            </form>
+                <input type="password" id="second-password" onchange="confirmPassword()" required>
+            </div>
+            <div class="error"></div>
         </div>
     </div>
 </body>
