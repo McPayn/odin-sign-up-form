@@ -18,7 +18,9 @@ body {
 }
 
 .forms-container {
-    background-color: white;
+    background-color: rgba(246, 241, 248, 0.452);
+    font-size: 24px;
+    font-weight: bold;
     height: 75%;
     width: 50%;
     padding: 10px;
@@ -30,5 +32,6 @@ body {
 
 .error {
     color: red;
+    font-weight: bold;
     font-size: 12px;
 }
