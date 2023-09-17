@@ -1,3 +1,9 @@
+/* No idea why, but I need a border to not completely shift the format
+   for the email and confirm password labels                           */
+* {
+    border: 2px solid transparent;
+}
+
 body {
     background-image: url(./imgs/nightcity.jpeg);
     background-size: 100%;
@@ -13,7 +19,11 @@ body {
     display: flex;
 }
 
-.left-column, .right-column {
+.left-column, .right-column{
+    display: flex;
+}
+
+.left {
     text-align: end;
 }
 .head, .foot {
