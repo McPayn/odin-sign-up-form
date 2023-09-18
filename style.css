@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Saira&family=Teko&display=swap');
 body {
     font-family: 'Teko', sans-serif;
     background-image: url(./imgs/nightcity.jpeg);
@@ -21,24 +20,16 @@ input {
     font-size: 30px;
     background-color: rgba(158, 147, 147, 0);
     border: none;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
 }
 
 input:focus {
     outline: none;
 }
 
-.columns {
+.row {
     display: flex;
-    gap: 50px;
-}
-
-.left-column, .right-column{
-    display: flex;
-}
-
-.right {
-    text-align: left;
+    gap: 40px;
 }
 .head, .foot {
     color: white;
@@ -49,14 +40,23 @@ input:focus {
     display: flex;
 }
 .logo {
-    height: 400px;
+    height: 300px;
     width: auto;
 }
 
+.logo-title {
+    font-size: 36px;
+    font-family: 'Saira', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
 .logo-box {
-    width: 60%;
-    height: 50%;
-    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.089);
 }
 .logo-container {
     color: white;
@@ -65,10 +65,11 @@ input:focus {
     padding: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .forms-container {
-    background-color: rgba(246, 241, 248, 0.452);
+    background-color: rgba(255, 253, 255, 0.419);
     font-size: 24px;
     font-weight: bold;
     height: 75%;

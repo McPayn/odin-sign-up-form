@@ -6,6 +6,7 @@ function confirmPassword() {
     const password = document.getElementById('first-password');
     const check_password = document.getElementById('second-password');
     const error_message = document.querySelector('.error');
+    if (password.value === '') { return; }
     if (password.value === check_password.value) {
         password.style.borderBottomColor = 'green';
         check_password.style.borderBottomColor = 'green';

@@ -15,33 +15,42 @@
         <div class="logo-container">
             <div class="logo-box">
                 <img src="./imgs/samurai.webp" alt="" class="logo">
+                <div class="logo-title">Samurai Demolitions</div>
             </div>
         </div>
         <div class="forms-container">
-            <div class="columns">
-                <div class="left-column">
-                    <div class="right">
-                        <input type="text" id="first-name" required>
-                        <legend>First Name</legend>
-                        <input type="text" id="user-name" required>
-                        <legend>Username</legend>
-                        <input type="password" id="first-password" required>
-                        <legend>Password</legend>
-                        <div class="error"></div>
-                    </div>
+            <div class="row">
+                <div class="left">
+                    <input type="text" id="first-name" required>
+                    <legend>First Name</legend>
                 </div>
-                <div class="right-column">
-                    <div class="right">
-                        <input type="text" id="last-name" required>
-                        <legend>Last Name</legend>
-                        <input type="text" id="email" required>
-                        <legend>E-Mail Address</legend>
-                        <input type="password" id="second-password" onkeyup="confirmPassword()" required>
-                        <legend>Confirm Password</legend>
-                    </div>
+                <div class="right">
+                    <input type="text" id="last-name" required>
+                    <legend>Last Name</legend>
                 </div>
             </div>
-            <div>
+            <div class="row">
+                <div class="left">
+                    <input type="text" id="user-name" required>
+                    <legend>Username</legend>
+                </div>
+                <div class="right">              
+                    <input type="text" id="email" required>
+                    <legend>E-Mail Address</legend>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <input type="password" id="first-password" required>
+                    <legend>Password</legend>
+                    <div class="error"></div>
+                </div>
+                <div class="right">            
+                    <input type="password" id="second-password" onkeyup="confirmPassword()" required>
+                    <legend>Confirm Password</legend>
+                </div>
+            </div>
+            <div class="row">
                 <button type="submit" id="submit-button" onclick="login()">Create Account</button>
             </div>
         </div>
@@ -49,6 +58,5 @@
     <div class="foot">
         Images owned by CD Projekt Red
     </div>
-    
 </body>
 </html>
