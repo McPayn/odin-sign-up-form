@@ -1,10 +1,7 @@
-/* No idea why, but I need a border to not completely shift the format
-   for the email and confirm password labels                           */
-* {
-    border: 2px solid transparent;
-}
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 body {
+    font-family: 'Teko', sans-serif;
     background-image: url(./imgs/nightcity.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -14,17 +11,34 @@ body {
     align-items: center;
     justify-content: center;
 }
+legend {
+    font-size: 36px;
+}
+input {
+    font-family: 'Teko', sans-serif;
+    width: 300px;
+    height: 30px;
+    font-size: 30px;
+    background-color: rgba(158, 147, 147, 0);
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+input:focus {
+    outline: none;
+}
 
 .columns {
     display: flex;
+    gap: 50px;
 }
 
 .left-column, .right-column{
     display: flex;
 }
 
-.left {
-    text-align: end;
+.right {
+    text-align: left;
 }
 .head, .foot {
     color: white;
@@ -59,7 +73,7 @@ body {
     font-weight: bold;
     height: 75%;
     width: 70%;
-    padding: 10px;
+    padding: 30px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -70,5 +84,16 @@ body {
 .error {
     color: red;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 24px;
+}
+
+button {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
 }

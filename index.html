@@ -20,33 +20,29 @@
         <div class="forms-container">
             <div class="columns">
                 <div class="left-column">
-                    <div class="left">
-                        <label for="first-name">First Name:</label>
-                        <label for="user-name">Username:</label>
-                        <label for="password">Password:</label>
-                    </div>
                     <div class="right">
                         <input type="text" id="first-name" required>
+                        <legend>First Name</legend>
                         <input type="text" id="user-name" required>
+                        <legend>Username</legend>
                         <input type="password" id="first-password" required>
+                        <legend>Password</legend>
+                        <div class="error"></div>
                     </div>
                 </div>
                 <div class="right-column">
-                    <div class="left">
-                        <label for="last-name">Last Name: </label>
-                        <label for="email">E-Mail: </label>
-                        <label for="confirm-password">Confirm: </label>
-                    </div>
                     <div class="right">
                         <input type="text" id="last-name" required>
+                        <legend>Last Name</legend>
                         <input type="text" id="email" required>
-                        <input type="password" id="second-password" onchange="confirmPassword()" required>
+                        <legend>E-Mail Address</legend>
+                        <input type="password" id="second-password" onkeyup="confirmPassword()" required>
+                        <legend>Confirm Password</legend>
                     </div>
                 </div>
-                <div class="error"></div>
             </div>
             <div>
-                <button type="submit" id="submit-button" onclick="login()">Submit</button>
+                <button type="submit" id="submit-button" onclick="login()">Create Account</button>
             </div>
         </div>
     </div>
